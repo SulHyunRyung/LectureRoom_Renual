@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/remote_btn.js"></script>
     <title>한국능률교육평가원</title>
 </head>
 
@@ -33,36 +35,71 @@
             </div> <!-- Header_Top End-->
 
             <div class="bottom_cover"> <!-- Header_Bottom Start-->
-                <div class="header_bottom">
-                    <nav>
-                        <ul>
-                            <li class="nav_title">바로가기</li>
-                            <li>
-                                <a href="/lectureroom/noticeAll.asp">
-                                    전체 공지사항
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/application/lecturelist_recom.asp">
-                                    수강신청
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/service/counsel/list.asp">
-                                    1:1 상담 게시판
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/application/lecturelist_01cert01_v4.asp">
-                                    자격증신청
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav>
+                    <ul>
+                        <li class="nav_title">바로가기</li>
+                        <li>
+                            <a href="/lectureroom/noticeAll.asp">
+                                전체 공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/application/lecturelist_recom.asp">
+                                수강신청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/service/counsel/list.asp">
+                                1:1 상담 게시판
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/application/lecturelist_01cert01_v4.asp">
+                                자격증신청
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div> <!-- Header_Bottom End-->
 
         </header><!-- Header End -->
+
+        <div class="main_contents"> <!-- Main_contents Start -->
+
+            <ul class="left_remote">
+                <li class="left_aside_title"><a>메뉴 타이틀</a></li>
+                <li>
+                    <a href="#">
+                        항목1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        항목2
+                    </a>
+                </li>
+            </ul>
+
+            <div class="essential_line">
+                <div class="essential_data">
+                    <div class="MR_data">
+                        필독사항 들어갈 위치
+                    </div>
+                    <div class="lec_data">
+                        학습자료실
+                    </div>
+                </div>
+            </div>
+
+            <div class="remote_btn">
+                <ul>
+                    <li class="remote_btn_on">신청중인 과정</li>
+                    <li class="remote_btn_off">~~</li>
+                    <li class="remote_btn_off">~~~~~</li>
+                </ul>
+            </div>
+
+        </div> <!-- Main_contents End -->
     </div> <!-- Wrap End -->
 </body>
 

@@ -1,13 +1,18 @@
-
-@font-face{
+@font-face {
     font-family: 'gm_M';
-    src: url("/font/gmarket_M.ttf");
+    src: url("../font/gmarket_M.ttf");
+}
+
+@font-face {
+    font-family: 's-core_L';
+    src: url("/font/s-core_L.otf");
 }
 
 #lecture_wrap,
 header,
 .top_cover,
-.bottom_cover {
+.bottom_cover,
+.essential_line {
     width: 100%;
     display: inline-block;
     position: relative;
@@ -42,9 +47,14 @@ header,
     margin: 0 15px;
     float: left;
 }
+
 /* Header_Top End */
 
 /* Header_Bottom Start */
+.bottom_cover {
+    border-bottom: 1px solid #ddd;
+}
+
 nav {
     display: inline-block;
 }
@@ -55,6 +65,7 @@ nav ul {
 
 nav ul li {
     float: left;
+    font-family: "gm_M";
     margin: 5px 20px;
     height: 70px;
     line-height: 70px;
@@ -62,8 +73,11 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'gm_M';
+    font-family: "gm_M";
+}
 
+nav ul li a:hover {
+    color: #4f47ec;
 }
 
 .nav_title {
@@ -82,4 +96,125 @@ nav ul li a {
     top: 5%;
     right: -20px;
 }
+
 /* Header_Bottom End */
+
+/* Main_contents Start */
+.main_contents {
+    width: 1000px;
+    display: inline-block;
+    position: relative;
+    margin: 30px auto;
+}
+
+.left_remote {
+    width: 200px;
+    height: 600px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: -220px;
+}
+
+.left_remote li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transition: 0.75s;
+}
+
+.left_remote li a {
+    display: block;
+}
+
+.left_remote li:not(.left_aside_title):hover {
+    padding-left: 35px;
+}
+
+.left_aside_title {
+    height: 70px !important;
+    line-height: 70px !important;
+    background: #aaa !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 필독사항 및 학습자료 Start */
+.essential_line {
+    margin-bottom: 30px;
+}
+
+.essential_data {
+    width: 60%;
+    float: right;
+}
+
+.MR_data {
+    width: 30%;
+    height: 210px;
+    float: left;
+    border: 1px solid #ddd;
+    margin-right: 10%;
+}
+
+.lec_data {
+    width: 60%;
+    height: 210px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+/* 필독 및 학습자료 End */
+
+/* 수강 현황 분류 탭 Start */
+.remote_btn {
+    width: 100%;
+    display: inline-block;
+}
+
+.remote_btn ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+.remote_btn ul li {
+    width: calc( 100% / 3 );
+    height: 30px;
+    border-bottom: none;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.remote_btn_on {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff !important;
+}
+
+.remote_btn_off {
+    border: 1px solid #fff;
+    border-bottom: 1px solid #ddd !important;
+}
+
+
+/* .remote_btn ul li:nth-child(2) {} */
+
+
+/* 수강 현황 분류 탭 End */
+
+
+/* Main_contents End */
+
+@media all and (max-width: 1023px) {
+    .head_top {
+        width: 100%;
+    }
+}
