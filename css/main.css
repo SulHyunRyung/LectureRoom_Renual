@@ -185,11 +185,11 @@ nav ul li a:hover {
 
 .remote_btn ul li {
     width: calc( 100% / 3 );
-    height: 30px;
+    height: 50px;
     border-bottom: none;
     float: left;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
     font-size: 18px;
     cursor: pointer;
 }
