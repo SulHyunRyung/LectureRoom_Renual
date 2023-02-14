@@ -1,3 +1,9 @@
+
+@font-face{
+    font-family: 'gm_M';
+    src: url("/font/gmarket_M.ttf");
+}
+
 #lecture_wrap,
 header,
 .top_cover,
@@ -39,5 +45,41 @@ header,
 /* Header_Top End */
 
 /* Header_Bottom Start */
+nav {
+    display: inline-block;
+}
 
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    float: left;
+    margin: 5px 20px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    font-family: 'gm_M';
+
+}
+
+.nav_title {
+    margin-right: 15px;
+    position: relative;
+    color: #d72222;
+}
+
+.nav_title::after {
+    content: "";
+    width: 1px;
+    height: 90%;
+    display: block;
+    background: #ddd;
+    position: absolute;
+    top: 5%;
+    right: -20px;
+}
 /* Header_Bottom End */
