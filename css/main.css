@@ -61,6 +61,7 @@ header,
 
 /* Header_Bottom Start */
 .bottom_cover {
+    background: #d72222;
     border-bottom: 1px solid #ddd;
 }
 
@@ -76,34 +77,18 @@ nav ul li {
     float: left;
     font-family: "gm_M";
     margin: 5px 20px;
-    height: 70px;
-    line-height: 70px;
+    height: 40px;
+    line-height: 40px;
     font-size: 18px;
 }
 
 nav ul li a {
     font-family: "gm_M";
+    color: #fff !important;
 }
 
 nav ul li a:hover {
-    color: #4f47ec;
-}
-
-.nav_title {
-    margin-right: 15px;
-    position: relative;
-    color: #d72222;
-}
-
-.nav_title::after {
-    content: "";
-    width: 1px;
-    height: 90%;
-    display: block;
-    background: #ddd;
-    position: absolute;
-    top: 5%;
-    right: -20px;
+    color: #000 !important;
 }
 
 /* Header_Bottom End */
@@ -284,6 +269,7 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 25px;
     padding-right: 10px;
+    font-family: 's-core_LB';
 }
 
 .date {
@@ -360,6 +346,14 @@ nav ul li a:hover {
     animation: twink_effect infinite step-end 1.5s;
 }
 
+.Nprepared {
+    font-size: 12px;
+    margin: 0 12px 5px;
+    text-align: left;
+    float: left;
+    color: #888;
+}
+
 .result_title {
     width: 30%;
     padding-left: 10px;
@@ -420,5 +414,18 @@ nav ul li a:hover {
 @media all and (max-width: 1023px) {
     .head_top {
         width: 100%;
+    }
+    .main_contents {
+        width: 100%;
+    }
+    .essential_data {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .lec_block {
+        width: 100%;
+        margin: 2% 0;
     }
 }
