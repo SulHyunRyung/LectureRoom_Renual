@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/remote_btn.js"></script>
+    <script src="js/table_switch.js"></script>
+    <script src="js/state_switch.js"></script>
     <title>한국능률교육평가원</title>
 </head>
 
@@ -93,11 +95,197 @@
 
             <div class="remote_btn">
                 <ul>
-                    <li class="remote_btn_on">신청중인 과정</li>
-                    <li class="remote_btn_off">~~</li>
-                    <li class="remote_btn_off">~~~~~</li>
+                    <li id="remote_btn_ID" class="remote_1 remote_btn remote_btn_off">신청중인 과정</li>
+                    <li id="remote_btn_ID" class="remote_2 remote_btn remote_btn_on">수강중인 과정</li>
+                    <li id="remote_btn_ID" class="remote_3 remote_btn remote_btn_off">수강중인 과정</li>
                 </ul>
             </div>
+
+            <div class="lec_table"> <!-- Lec_Table Start -->
+                <div class="lec_block lec_block_1"> <!-- Lec_block Start -->
+                    <!-- Lec_Block : 1 = 신청중 / 2 = 수강중 / 3 = 종강 -->
+                    <div class="block_line block_line_1"> <!-- Line 1 Start -->
+                        <span class="lec_title">
+                            로스팅핸드드립마스터
+                        </span>
+                        <span class="lec_state state_1"> <!-- State : 1 = 신청중 / 2 = 수강중 / 3 = 종강 / 4 = 추가 --></span>
+                        <div class="right_1">
+                            <p class="lec_scedule">
+                                5주 과정
+                            </p>
+                            <p class="teacher">
+                                한현석 교수님
+                            </p>
+                        </div>
+                    </div> <!-- Line 1 End -->
+                    <div class="block_line block_line_2"> <!-- Line 2 Start -->
+                        <span class="lec_date date">
+                            수강기간 2023년 02월 13일 ~ 2023년 03월 20일
+                        </span>
+                        <input type="button" value="강의시작" class="block_btn lec_btn_off"> <!-- 수강기간O = lec_btn_on / 수강기간 X = lec_btn_off-->
+                        <input type="button" value="복습신청" class="block_btn repeat_btn">
+                    </div> <!-- Line 2 End -->
+                    <div class="block_line block_line_3"> <!-- Line 3 Start -->
+                        <div class="exam_block">
+                            <span class="date app_date"> <!-- 신청기간 일 경우 시험기간 구역을 대체함 -->
+                                신청과정은 반 배정 이 후 수강이 가능합니다.
+                            </span>
+                        </div>
+                        <div class="result_block">
+                            <span class="result_title">
+                                성적확인
+                            </span>
+                            <div class="result_trigger">
+                                <!-- 열람가능 = result_on / 열람불가능 = result_off -->
+                                <input type="button" value="성적표 2급" class="result_off">
+                                <input type="button" value="성적표 1급" class="result_on">
+                                <input type="button" value="시험지 2급" class="result_off">
+                                <input type="button" value="시험지 1급" class="result_off">
+                            </div>
+                        </div>
+                    </div> <!-- Line 3 End -->
+                </div> <!-- Lec_block End -->
+
+                <div class="lec_block lec_block_2"> <!-- Lec_block Start -->
+                    <!-- Lec_Block : 1 = 신청중 / 2 = 수강중 / 3 = 종강 -->
+                    <div class="block_line block_line_1"> <!-- Line 1 Start -->
+                        <span class="lec_title">
+                            색채심리상담사
+                        </span>
+                        <span class="lec_state state_2"> <!-- State : 1 = 신청중 / 2 = 수강중 / 3 = 종강 / 4 = 추가 --></span>
+                        <div class="right_1">
+                            <p class="lec_scedule">
+                                5주 과정
+                            </p>
+                            <p class="teacher">
+                                문주 교수님
+                            </p>
+                        </div>
+                    </div> <!-- Line 1 End -->
+                    <div class="block_line block_line_2"> <!-- Line 2 Start -->
+                        <span class="lec_date date">
+                            수강기간 2023년 02월 13일 ~ 2023년 03월 20일
+                        </span>
+                        <input type="button" value="강의시작" class="block_btn lec_btn_on"> <!-- 수강기간O = lec_btn_on / 수강기간 X = lec_btn_off-->
+                        <input type="button" value="복습신청" class="block_btn repeat_btn">
+                    </div> <!-- Line 2 End -->
+                    <div class="block_line block_line_3"> <!-- Line 3 Start -->
+                        <div class="exam_block">
+                            <span class="exam_date date exam_on"> <!-- 시험기간에는 exam_on / 아닐 시 exam_off -->
+                                시험기간 2023년 03월 06일 ~ 2023년 03월 20일
+                            </span>
+                            <input type="button" value="시험응시" class="block_btn exam_btn_on"> <!-- 시험기간에는 exam_btn_on / 아닐 시 exam_btn_off -->
+                            <input type="button" value="자격증신청" class="block_btn app_btn">
+                        </div>
+                        <div class="result_block">
+                            <span class="result_title">
+                                성적확인
+                            </span>
+                            <div class="result_trigger">
+                                <!-- 열람가능 = result_on / 열람불가능 = result_off -->
+                                <input type="button" value="성적표 2급" class="result_off">
+                                <input type="button" value="성적표 1급" class="result_on">
+                                <input type="button" value="시험지 2급" class="result_off">
+                                <input type="button" value="시험지 1급" class="result_off">
+                            </div>
+                        </div>
+                    </div> <!-- Line 3 End -->
+                </div> <!-- Lec_block End -->
+
+                <div class="lec_block lec_block_3"> <!-- Lec_block Start -->
+                    <!-- Lec_Block : 1 = 신청중 / 2 = 수강중 / 3 = 종강 -->
+                    <div class="block_line block_line_1"> <!-- Line 1 Start -->
+                        <span class="lec_title">
+                            반려동물관리사
+                        </span>
+                        <span class="lec_state state_3"> <!-- State : 1 = 신청중 / 2 = 수강중 / 3 = 종강 / 4 = 추가 --></span>
+                        <div class="right_1">
+                            <p class="lec_scedule">
+                                5주 과정
+                            </p>
+                            <p class="teacher">
+                                한지훈 교수님
+                            </p>
+                        </div>
+                    </div> <!-- Line 1 End -->
+                    <div class="block_line block_line_2"> <!-- Line 2 Start -->
+                        <span class="lec_date date">
+                            수강기간 2023년 02월 13일 ~ 2023년 03월 20일
+                        </span>
+                        <input type="button" value="강의시작" class="block_btn lec_btn_off"> <!-- 수강기간O = lec_btn_on / 수강기간 X = lec_btn_off-->
+                        <input type="button" value="복습신청" class="block_btn repeat_btn">
+                    </div> <!-- Line 2 End -->
+                    <div class="block_line block_line_3"> <!-- Line 3 Start -->
+                        <div class="exam_block">
+                            <span class="exam_date date exam_on"> <!-- 시험기간에는 exam_on / 아닐 시 exam_off -->
+                                시험기간 2023년 03월 06일 ~ 2023년 03월 20일
+                            </span>
+                            <input type="button" value="시험응시" class="block_btn exam_btn_off"> <!-- 시험기간에는 exam_btn_on / 아닐 시 exam_btn_off -->
+                            <input type="button" value="자격증신청" class="block_btn app_btn">
+                        </div>
+                        <div class="result_block">
+                            <span class="result_title">
+                                성적확인
+                            </span>
+                            <div class="result_trigger">
+                                <!-- 열람가능 = result_on / 열람불가능 = result_off -->
+                                <input type="button" value="성적표 2급" class="result_off">
+                                <input type="button" value="성적표 1급" class="result_on">
+                                <input type="button" value="시험지 2급" class="result_off">
+                                <input type="button" value="시험지 1급" class="result_off">
+                            </div>
+                        </div>
+                    </div> <!-- Line 3 End -->
+                </div> <!-- Lec_block End -->
+
+                <div class="lec_block lec_block_4"> <!-- Lec_block Start -->
+                    <!-- Lec_Block : 1 = 신청중 / 2 = 수강중 / 3 = 종강 -->
+                    <div class="block_line block_line_1"> <!-- Line 1 Start -->
+                        <span class="lec_title">
+                            1인미디어콘텐츠창작자
+                        </span>
+                        <span class="lec_state state_4"> <!-- State : 1 = 신청중 / 2 = 수강중 / 3 = 종강 / 4 = 추가 --></span>
+                        <div class="right_1">
+                            <p class="lec_scedule">
+                                5주 과정
+                            </p>
+                            <p class="teacher">
+                                백진원 교수님
+                            </p>
+                        </div>
+                    </div> <!-- Line 1 End -->
+                    <div class="block_line block_line_2"> <!-- Line 2 Start -->
+                        <span class="lec_date date">
+                            수강기간 2023년 02월 13일 ~ 2023년 03월 20일
+                        </span>
+                        <input type="button" value="강의시작" class="block_btn lec_btn_on"> <!-- 수강기간O = lec_btn_on / 수강기간 X = lec_btn_off-->
+                        <input type="button" value="복습신청" class="block_btn repeat_btn">
+                    </div> <!-- Line 2 End -->
+                    <div class="block_line block_line_3"> <!-- Line 3 Start -->
+                        <div class="exam_block">
+                            <span class="exam_date date exam_on"> <!-- 시험기간에는 exam_on / 아닐 시 exam_off -->
+                                시험기간 2023년 03월 06일 ~ 2023년 03월 20일
+                            </span>
+                            <input type="button" value="시험응시" class="block_btn exam_btn_off"> <!-- 시험기간에는 exam_btn_on / 아닐 시 exam_btn_off -->
+                            <input type="button" value="자격증신청" class="block_btn app_btn">
+                        </div>
+                        <div class="result_block">
+                            <span class="result_title">
+                                성적확인
+                            </span>
+                            <div class="result_trigger">
+                                <!-- 열람가능 = result_on / 열람불가능 = result_off -->
+                                <input type="button" value="성적표 2급" class="result_off">
+                                <input type="button" value="성적표 1급" class="result_on">
+                                <input type="button" value="시험지 2급" class="result_off">
+                                <input type="button" value="시험지 1급" class="result_off">
+                            </div>
+                        </div>
+                    </div> <!-- Line 3 End -->
+                </div> <!-- Lec_block End -->
+
+            </div> <!-- Lec_Table End -->
+
 
         </div> <!-- Main_contents End -->
     </div> <!-- Wrap End -->
