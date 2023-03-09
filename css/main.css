@@ -103,7 +103,6 @@ nav ul li a:hover {
 
 .left_remote {
     width: 200px;
-    height: 600px;
     border: 1px solid #ddd;
     position: absolute;
     top: 0;
@@ -122,20 +121,51 @@ nav ul li a:hover {
     transition: 0.75s;
 }
 
+.left_remote li:last-child {
+    border-bottom: none;
+}
+
 .left_remote li a {
     display: block;
+    font-family: 's-core_L';
 }
 
 .left_remote li:not(.left_aside_title):hover {
     padding-left: 35px;
+    background: #132367;
+    color: #fff !important;
 }
 
 .left_aside_title {
     height: 70px !important;
     line-height: 70px !important;
-    background: #aaa !important;
+    background: linear-gradient(45deg, #ff4d4d, transparent) !important;
     font-weight: bold;
     font-size: 20px;
+    font-family: 's-core_L';
+    color: #fff;
+}
+
+.quick_apply {
+    animation: quick_effect infinite step-end 1.5s;
+}
+
+@keyframes quick_effect {
+    0% {
+        color: #000;
+        font-weight: normal;
+    }
+
+    50% {
+        color: #f00;
+        font-weight: bold;
+
+    }
+
+    100% {
+        color: #000;
+        font-weight: normal;
+    }
 }
 
 /* 필독사항 및 학습자료 Start */
@@ -150,7 +180,6 @@ nav ul li a:hover {
 
 .MR_data {
     width: 30%;
-    height: 210px;
     float: left;
     border: 1px solid #ddd;
     margin-right: 10%;
@@ -159,8 +188,11 @@ nav ul li a:hover {
 .lec_data {
     width: 60%;
     height: 210px;
-    border: 1px solid #ddd;
     float: left;
+}
+
+.lec_data img {
+    width: 100%;
 }
 
 /* 필독 및 학습자료 End */
@@ -415,17 +447,54 @@ nav ul li a:hover {
     .head_top {
         width: 100%;
     }
+
     .main_contents {
         width: 100%;
     }
+
     .essential_data {
         width: 100%;
     }
+
+    .left_remote {
+        display: none;
+    }
+
+    .member_data {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
+
 
 @media all and (max-width: 767px) {
     .lec_block {
         width: 100%;
         margin: 2% 0;
+    }
+
+    .member_data {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 12px;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 50%;
+    }
+
+    .remote_btn ul li {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width:320px) {
+    .right_1 {
+        width: 25%;
+        font-size: 12px;
+        padding-right: 5px;
     }
 }
