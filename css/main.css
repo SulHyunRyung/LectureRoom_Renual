@@ -667,6 +667,10 @@ nav ul li a:hover {
     .lec_data img {
         width: 70%;
     }
+
+    .box_lec_name {
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width:320px) {
