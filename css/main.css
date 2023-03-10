@@ -238,7 +238,6 @@ nav ul li a:hover {
 .img_box {
     width: 300%;
     overflow: hidden;
-    display: flex;
 }
 
 .img_box li {
@@ -466,7 +465,6 @@ nav ul li a:hover {
 .exam_on {
     /* 시험기간일 경우 */
     color: #ff3030;
-    font-family: 's-core_LB';
 }
 
 .exam_off {
@@ -560,19 +558,16 @@ nav ul li a:hover {
     0% {
         background: #f00;
         color: #fff;
-        border: 2px solid transparent;
     }
 
     50% {
         background: #fff;
         color: #f00;
-        border: 2px solid #f00;
     }
 
     100% {
         background: #f00;
         color: #fff;
-        border: 2px solid transparent;
     }
 }
 
