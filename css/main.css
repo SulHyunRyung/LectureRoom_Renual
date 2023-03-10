@@ -2,6 +2,7 @@
     font-family: 'gm_M';
     src: url("../font/gmarket_M.ttf");
 }
+
 @font-face {
     font-family: 's-core_L';
     src: url("../font/s-core_L.otf");
@@ -171,7 +172,7 @@ nav ul li a:hover {
 }
 
 .recom_board {
-    width:300px;
+    width: 300px;
     float: left;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -188,21 +189,24 @@ nav ul li a:hover {
     width: 100%;
     display: inline-block;
 }
+
 .NH_bar li {
-    width:30%;
+    width: 30%;
     float: left;
-    padding:5px;
+    padding: 5px;
     font-family: 's-core_LB';
     font-weight: bold;
     cursor: pointer;
     transition: 1s;
 }
+
 .hot_bar {
     width: 70%;
     text-align: left;
     background: #ffc112;
     color: #132367;
 }
+
 .new_bar {
     width: 30%;
     text-align: right;
@@ -214,9 +218,11 @@ nav ul li a:hover {
     width: 70% !important;
     padding: 5px 15px !important;
 }
+
 .event_box {
     overflow: hidden;
 }
+
 .arrow_btn {
     width: 30px;
     position: absolute;
@@ -239,11 +245,11 @@ nav ul li a:hover {
     width: 300%;
     overflow: hidden;
     transition: 1s;
-    left:0%;
+    left: 0%;
 }
 
 .img_box li {
-    width: calc( 100% / 3 );
+    width: calc(100% / 3);
     float: left;
     transition: 1s;
 }
@@ -301,7 +307,8 @@ nav ul li a:hover {
     margin-right: 10%;
     text-align: left;
 }
-.data_title {    
+
+.data_title {
     line-height: 35px;
     font-size: 18px;
     font-weight: bold;
@@ -577,7 +584,11 @@ nav ul li a:hover {
 
 
 /* Main_contents End */
-
+@media all and (max-width: 1199px) {
+  .head_top {
+    width: 100%;
+  }  
+}
 @media all and (max-width: 1023px) {
     .head_top {
         width: 100%;
@@ -600,11 +611,26 @@ nav ul li a:hover {
         top: 0;
         right: 0;
     }
+
     .recom_board {
         width: 100%;
     }
+
+    .box_lec_name {
+        font-size: 16px;
+    }
 }
 
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    .essential_data {
+        margin-top: 20px;
+    }
+
+    .essential_data>div {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
 
 @media all and (max-width: 767px) {
     .lec_block {
@@ -626,6 +652,20 @@ nav ul li a:hover {
 
     .remote_btn ul li {
         font-size: 15px;
+    }
+
+    .MR_data {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .lec_data {
+        width: 100%;
+    }
+
+    .lec_data img {
+        width: 70%;
     }
 }
 
