@@ -238,6 +238,8 @@ nav ul li a:hover {
 .img_box {
     width: 300%;
     overflow: hidden;
+    transition: 1s;
+    left:0%;
 }
 
 .img_box li {
