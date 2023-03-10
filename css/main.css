@@ -21,7 +21,9 @@ header,
 .essential_line,
 .lec_table,
 .exam_block,
-.result_block {
+.result_block,
+.event_box,
+.img_box {
     width: 100%;
     display: inline-block;
     position: relative;
@@ -134,6 +136,7 @@ nav ul li a:hover {
     padding-left: 35px;
     background: #132367;
     color: #fff !important;
+    font-weight: bold !important;
 }
 
 .left_aside_title {
@@ -168,6 +171,119 @@ nav ul li a:hover {
     }
 }
 
+.recom_board {
+    width:300px;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.recom_title {
+    font-family: 'gm_M';
+    font-size: 18px;
+    text-align: left;
+    padding: 3%;
+}
+
+.NH_bar {
+    width: 100%;
+    display: inline-block;
+}
+.NH_bar li {
+    width:30%;
+    float: left;
+    padding:5px;
+    font-family: 'gm_M';
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+.hot_bar {
+    width: 70%;
+    text-align: left;
+    background: #f00;
+}
+.new_bar {
+    width: 30%;
+    text-align: right;
+    background: #00f;
+}
+
+.bar_on {
+    width: 70% !important;
+    padding: 5px 15px !important;
+}
+.event_box {
+    overflow: hidden;
+}
+.arrow_btn {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.left_btn {
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.right_btn {
+    right: 10%;
+    transform: translate(50%, -50%);
+}
+
+.img_box {
+    width: 300%;
+    overflow: hidden;
+    display: flex;
+}
+
+.img_box li {
+    width: calc( 100% / 3 );
+    float: left;
+    transition: 1s;
+}
+
+
+.new_box {
+    display: none;
+}
+
+.lec_box {
+    width: 55%;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 3px #ddd;
+    margin: 20px auto;
+}
+
+.box_logo {
+    text-align: center;
+}
+
+.box_logo img {
+    width: 50%;
+}
+
+.box_lec_img {
+    width: 85%;
+}
+
+.box_lec_name {
+    text-align: center;
+    font-family: 'gm_M';
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+    margin-top: 5px;
+    border-top: 1px solid #ddd;
+    color: #132367;
+}
+
 /* 필독사항 및 학습자료 Start */
 .essential_line {
     margin-bottom: 30px;
@@ -179,21 +295,43 @@ nav ul li a:hover {
 }
 
 .MR_data {
-    width: 30%;
+    width: 300px;
     float: left;
-    border: 1px solid #ddd;
     margin-right: 10%;
+    text-align: left;
+}
+.data_title {    
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'gm_M';
+    color: #132367;
+}
+
+.data_tip {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-family: 'gm_M';
 }
 
 .lec_data {
-    width: 60%;
-    height: 210px;
-    float: left;
+    width: 40%;
+    height: 200px;
+    float: right;
+    position: relative;
 }
 
 .lec_data img {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 /* 필독 및 학습자료 End */
 
