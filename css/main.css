@@ -2,7 +2,6 @@
     font-family: 'gm_M';
     src: url("../font/gmarket_M.ttf");
 }
-
 @font-face {
     font-family: 's-core_L';
     src: url("../font/s-core_L.otf");
@@ -193,21 +192,22 @@ nav ul li a:hover {
     width:30%;
     float: left;
     padding:5px;
-    font-family: 'gm_M';
+    font-family: 's-core_LB';
     font-weight: bold;
-    color: #fff;
     cursor: pointer;
     transition: 1s;
 }
 .hot_bar {
     width: 70%;
     text-align: left;
-    background: #f00;
+    background: #ffc112;
+    color: #132367;
 }
 .new_bar {
     width: 30%;
     text-align: right;
-    background: #00f;
+    background: #132367;
+    color: #fff;
 }
 
 .bar_on {
@@ -599,6 +599,9 @@ nav ul li a:hover {
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .recom_board {
+        width: 100%;
     }
 }
 

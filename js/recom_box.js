@@ -25,10 +25,10 @@ $(function(){
             $('.img_box').css({'left':'0'});
         }
         if ( slide_index == 2 ) {
-            $('.img_box').css({'left':'-300px'});
+            $('.img_box').css({'left':'-100%'});
         }
         if ( slide_index == 3 ) {
-            $('.img_box').css({'left':'-600px'});
+            $('.img_box').css({'left':'-200%'});
         }
     });
     $('.right_btn').on('click', function(){
@@ -40,10 +40,10 @@ $(function(){
             $('.img_box').css({'left':'0'});
         }
         if ( slide_index == 2 ) {
-            $('.img_box').css({'left':'-300px'});
+            $('.img_box').css({'left':'-100%'});
         }
         if ( slide_index == 3 ) {
-            $('.img_box').css({'left':'-600px'});
+            $('.img_box').css({'left':'-200%'});
         }
     });
 });
