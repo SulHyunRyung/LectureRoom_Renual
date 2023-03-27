@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'gm_M';
+    src: url("../font/gmarket_M.ttf");
+}
+
+@font-face {
+    font-family: 's-core_L';
+    src: url("../font/s-core_L.otf");
+}
+
+@font-face {
+    font-family: 's-core_LB';
+    src: url("../font/s-core_LB.otf");
+}
+header,
+.top_cover,
+.bottom_cover {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+/* Header_Top Start */
+.top_cover {
+    border-bottom: 1px solid #ddd;
+}
+
+.head_top {
+    width: 1200px;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    width: 250px;
+    margin: 30px auto;
+}
+
+.member_data {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.member_data ul li {
+    margin: 0 15px;
+    float: left;
+}
+
+/* Header_Top End */
+
+/* Header_Bottom Start */
+.bottom_cover {
+    background: #d72222;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    float: left;
+    font-family: "gm_M";
+    margin: 5px 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    font-family: "gm_M";
+    color: #fff !important;
+}
+
+nav ul li a:hover {
+    color: #000 !important;
+}
+
+/* Header_Bottom End */
+@media all and (max-width: 1199px) {
+    .head_top {
+      width: 100%;
+    }  
+  }
+
+  
+@media all and (max-width: 1023px) {
+    .head_top {
+        width: 100%;
+    }
+}
