@@ -17,7 +17,7 @@
     margin: 30px auto;
 }
 
-.left_remote { 
+.left_remote {
     left: -220px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .v_link_place {
-    width: calc( 70% - 20px );
+    width: calc(70% - 20px);
     float: left;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .data_box_title {
-    background:#ff4141;
+    background: #ff4141;
     color: #fff;
     font-family: 'Line_B';
     font-size: 22px;
@@ -200,15 +200,18 @@
     color: #666;
     margin-bottom: 10px;
 }
+
 /* Main_contents End */
 
 @media all and (max-width: 999px) {
     .main_contents {
         width: 100%;
     }
+
     .data_viewer {
         width: 100%;
     }
+
     .view_contents p {
         font-size: 16px;
     }
@@ -222,7 +225,7 @@
     .data_ment_mini {
         font-size: 14px;
     }
-    
+
     .view_contents p {
         font-size: 14px;
     }
