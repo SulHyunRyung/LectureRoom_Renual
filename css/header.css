@@ -12,6 +12,18 @@
     font-family: 's-core_LB';
     src: url("../font/s-core_LB.otf");
 }
+@font-face {
+    font-family: 'Line_B';
+    src: url("../font/Line_B.ttf");
+}
+@font-face {
+    font-family: 'Line_R';
+    src: url("../font/Line_R.ttf");
+}
+@font-face {
+    font-family: 'Line_T';
+    src: url("../font/Line_T.ttf");
+}
 header,
 .top_cover,
 .bottom_cover {
@@ -42,11 +54,17 @@ header,
     position: absolute;
     top: 30%;
     right: 5%;
+    font-family: 'Line_R';
 }
 
 .member_data ul li {
     margin: 0 15px;
     float: left;
+}
+
+.member_data ul li a {
+    font-size: 16px;
+    font-family: 'Line_R';
 }
 
 /* Header_Top End */

@@ -38,75 +38,6 @@ header,
     position: relative;
     margin: 30px auto;
 }
-
-.left_remote {
-    width: 200px;
-    border: 1px solid #ddd;
-    position: absolute;
-    top: 0;
-    left: -220px;
-}
-
-.left_remote li {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    float: left;
-    border-bottom: 1px solid #ddd;
-    background: #fff;
-    text-align: left;
-    padding-left: 20px;
-    transition: 0.75s;
-}
-
-.left_remote li:last-child {
-    border-bottom: none;
-}
-
-.left_remote li a {
-    display: block;
-    font-family: 's-core_L';
-}
-
-.left_remote li:not(.left_aside_title):hover {
-    padding-left: 35px;
-    background: #132367;
-    color: #fff !important;
-    font-weight: bold !important;
-}
-
-.left_aside_title {
-    height: 70px !important;
-    line-height: 70px !important;
-    background: linear-gradient(45deg, #ff4d4d, transparent) !important;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 's-core_L';
-    color: #fff;
-}
-
-.quick_apply {
-    animation: quick_effect infinite step-end 1.5s;
-}
-
-@keyframes quick_effect {
-    0% {
-        color: #000;
-        font-weight: normal;
-    }
-
-    50% {
-        color: #f00;
-        font-weight: bold;
-
-    }
-
-    100% {
-        color: #000;
-        font-weight: normal;
-    }
-}
-
 .recom_board {
     width: 300px;
     float: left;
@@ -235,6 +166,7 @@ header,
 .essential_data {
     width: 60%;
     float: right;
+    margin-top: 20px;
 }
 
 .MR_data {
