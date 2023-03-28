@@ -15,3 +15,35 @@ a:visited,
 a:active { 
     color: inherit;
 }
+
+@font-face {
+    font-family: 'gm_M';
+    src: url("../font/gmarket_M.ttf");
+}
+
+@font-face {
+    font-family: 'gm_B';
+    src: url("../font/gmarket_B.ttf");
+}
+
+@font-face {
+    font-family: 's-core_L';
+    src: url("../font/s-core_L.otf");
+}
+
+@font-face {
+    font-family: 's-core_LB';
+    src: url("../font/s-core_LB.otf");
+}
+@font-face {
+    font-family: 'Line_B';
+    src: url("../font/Line_B.ttf");
+}
+@font-face {
+    font-family: 'Line_R';
+    src: url("../font/Line_R.ttf");
+}
+@font-face {
+    font-family: 'Line_T';
+    src: url("../font/Line_T.ttf");
+}

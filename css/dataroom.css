@@ -1,0 +1,108 @@
+/* 부모 블럭 공통 요소 */
+#data_wrap {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+/* Main_contents Start */
+.main_contents {
+    width: 1000px;
+    display: inline-block;
+    position: relative;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+}
+
+.left_remote { 
+    left: -220px;
+}
+
+.contents_title {
+    font-family: 'Line_B';
+    font-size: 26px;
+    text-align: left;
+}
+
+.data_viewer {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.data_viewer p {
+    font-family: 'Line_R';
+}
+
+.viewer_title {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.data_ment_mini {
+    font-size: 16px;
+    color: #666;
+}
+
+.view_contents {
+    width: 50%;
+    display: inline-block;
+    background: #4455d7;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.view_contents p {
+    width: 50%;
+    line-height: 35px;
+    margin: 15px auto;
+    color: #fff;
+    background: #030c72;
+    font-size: 18px;
+    font-family: 'Line_B';
+}
+
+.v_icon_place {
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+}
+
+.v_icon_place img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.v_link_place {
+    width: calc( 70% - 20px );
+    float: left;
+}
+
+.v_link_place ul {
+    width: 100%;
+    display: inline-block;
+}
+
+.v_link_place ul li {
+    width: 80%;
+    background: #ff4141;
+    margin: 10px auto;
+    font-family: 'gm_B';
+    color: #fff;
+    line-height: 30px;
+}
+
+.v_link_place ul li:first-child {
+    margin-top: 0;
+}
+
+.v_link_place ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Main_contents End */

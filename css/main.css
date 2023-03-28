@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'gm_M';
-    src: url("../font/gmarket_M.ttf");
-}
-
-@font-face {
-    font-family: 's-core_L';
-    src: url("../font/s-core_L.otf");
-}
-
-@font-face {
-    font-family: 's-core_LB';
-    src: url("../font/s-core_LB.otf");
-}
-
 /* 부모 블럭 공통 요소 */
 #lecture_wrap,
 header,
@@ -37,6 +22,9 @@ header,
     display: inline-block;
     position: relative;
     margin: 30px auto;
+}
+.left_remote {
+    left: -220px;
 }
 .recom_board {
     width: 300px;
@@ -454,9 +442,6 @@ header,
 /* Main_contents End */
 
 @media all and (max-width: 1023px) {
-    .head_top {
-        width: 100%;
-    }
 
     .main_contents {
         width: 100%;
@@ -464,16 +449,6 @@ header,
 
     .essential_data {
         width: 100%;
-    }
-
-    .left_remote {
-        display: none;
-    }
-
-    .member_data {
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 
     .recom_board {
@@ -501,19 +476,6 @@ header,
         width: 100%;
         margin: 2% 0;
     }
-
-    .member_data {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 12px;
-    }
-
-    nav ul li {
-        margin: 0;
-        width: 50%;
-    }
-
     .remote_btn ul li {
         font-size: 15px;
     }
