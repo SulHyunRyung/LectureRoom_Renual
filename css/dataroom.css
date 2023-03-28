@@ -1,5 +1,8 @@
 /* 부모 블럭 공통 요소 */
-#data_wrap {
+#data_wrap,
+.contents_box,
+.data_icon,
+.view_cover {
     width: 100%;
     display: inline-block;
     position: relative;
@@ -46,13 +49,16 @@
     color: #666;
 }
 
+.view_cover {
+    margin-bottom: 20px;
+}
+
 .view_contents {
     width: 50%;
     display: inline-block;
-    background: #4455d7;
+    background: #7483f5;
     margin: 0 auto;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 
 .view_contents p {
@@ -105,4 +111,90 @@
     display: block;
 }
 
+.contents_box {
+    width: 45%;
+    margin: 2.5%;
+    border: 1px solid #ddd;
+    display: inline-block;
+    float: left;
+}
+
+.data_box_title {
+    background:#ff4141;
+    color: #fff;
+    font-family: 'Line_B';
+    font-size: 22px;
+    line-height: 35px;
+    padding-top: 2.5px;
+}
+
+.data_list li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.data_list li:not(.data_on):hover {
+    background: #23369b;
+    color: #fff;
+}
+
+.data_list {
+    width: 100%;
+    display: inline-block;
+}
+
+.data_list li {
+    float: left;
+    line-height: 30px;
+    background: #fff;
+    font-family: 'Line_B';
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.no_sup .data_list li {
+    width: 50%;
+}
+
+.yes_sup .data_list li {
+    width: 33%;
+}
+
+.data_on {
+    background: #5571ff !important;
+    color: #fff;
+}
+
+.data_icon {
+    margin: 10px 0 5px;
+}
+
+.data_icon:not(.lesson_box) {
+    display: none;
+}
+
+.icon_part {
+    font-family: 'Line_B';
+    width: 50%;
+    float: left;
+}
+
+.supply_box .icon_part {
+    width: 100%;
+}
+
+.supply_box .icon_part img {
+    width: 25%;
+}
+
+.icon_part img {
+    width: 50%;
+}
+
+.same {
+    font-family: 'Line_R';
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
 /* Main_contents End */

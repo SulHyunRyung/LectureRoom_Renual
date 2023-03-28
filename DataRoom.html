@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/left.css">
     <link rel="stylesheet" href="css/dataroom.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/data_list_controll.js"></script>
     <title>한국능률교육평가원</title>
 </head>
 
 <body>
-    <div id="data_wrap">
+    <div id="data_wrap"><!-- Wrap Start -->
         <header><!-- Header Start -->
             <div class="top_cover"> <!-- Header_Top Start-->
                 <div class="head_top">
@@ -60,8 +61,8 @@
                 </nav>
             </div> <!-- Header_Bottom End-->
         </header><!-- Header End -->
-        <div class="main_contents">
-            <ul class="left_remote">
+        <div class="main_contents"><!-- Main_Contents Start -->
+            <ul class="left_remote"><!-- Left_Remote Start -->
                 <li class="left_aside_title"><a>퀵메뉴</a></li>
                 <li>
                     <a href="/lectureroom/noticeAll.asp">
@@ -83,8 +84,8 @@
                         자격증신청
                     </a>
                 </li>
-            </ul>
-            <p class="contents_title">
+            </ul><!-- Left_Remote End -->
+            <p class="contents_title"><!-- Viewer_Contents Start -->
                 학습자료실
             </p>
             <div class="data_viewer">
@@ -95,36 +96,131 @@
                     하단의 학습자료가 열리지 않는 경우, 아래 뷰어 프로그램 링크를 통해 설치 후 재열람하시기 바랍니다.
                 </p>
             </div>
-            <div class="view_contents">
-                <p>
-                    한글·PDF 통합뷰어 다운로드
+            <div class="view_cover">
+                <div class="view_contents">
+                    <p>
+                        한글·PDF 통합뷰어 다운로드
+                    </p>
+                    <div class="v_icon_place">
+                        <img src="image/dataroom/data_icon.png" alt="뷰어_아이콘">
+                    </div>
+                    <div class="v_link_place">
+                        <ul>
+                            <li>
+                                <a href="https://www.hancom.com/cs_center/csDownload.do?div=01&ver=" target="_blank">
+                                    PC 다운로드
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.hancom.docs.suite"
+                                    target="_blank">
+                                    Android 다운로드
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://apps.apple.com/app/id1611732182" target="_blank">
+                                    IOS 다운로드
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Viewer_Contents End -->
+            <div class="contents_box no_sup"><!-- Data_Main Start -->
+                <p class="data_box_title">
+                    언어발달지도사
                 </p>
-                <div class="v_icon_place">
-                    <img src="image/dataroom/data_icon.png" alt="뷰어_아이콘">
+                <ul class="data_list DL_1">
+                    <li class="lesson_data data_on">교안</li>
+                    <li class="ex_data">예상문답</li>
+                </ul>
+                <div class="data_icon lesson_box">
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/hwp_data.png" alt="한글교안"><br>
+                            <p>한글교안</p>
+                        </a>
+                    </div>
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/pdf_data.png" alt="PDF교안"><br>
+                            <p>PDF교안</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="v_link_place">
-                    <ul>
-                        <li>
-                            <a href="https://www.hancom.com/cs_center/csDownload.do?div=01&ver=" target="_blank">
-                                PC 다운로드
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.hancom.docs.suite" target="_blank">
-                                Android 다운로드
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://apps.apple.com/app/id1611732182" target="_blank">
-                                IOS 다운로드
-                            </a>
-                        </li>
-                    </ul>
+                <div class="data_icon Ex_box">
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/hwp_data.png" alt="한글예상문답"><br>
+                            <p>한글예상문답</p>
+                        </a>
+                    </div>
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/pdf_data.png" alt="PDF예상문답"><br>
+                            <p>PDF예상문답</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-    </div>
+                <p class="same">
+                    위 한글파일과 PDF파일은 같은 자료입니다.<br>
+                    원하시는 파일 형식으로 다운로드 받으시면 됩니다.
+                </p>
+            </div><!-- Data_Main End -->
+            <div class="contents_box yes_sup"><!-- Data_Main Start -->
+                <p class="data_box_title">
+                    캘리그라피지도사
+                </p>
+                <ul class="data_list DL_1">
+                    <li class="lesson_data data_on">교안</li>
+                    <li class="ex_data">예상문답</li>
+                    <li class="supply">취득특전</li>
+                </ul>
+                <div class="data_icon lesson_box">
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/hwp_data.png" alt="한글교안"><br>
+                            <p>한글교안</p>
+                        </a>
+                    </div>
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/pdf_data.png" alt="PDF교안"><br>
+                            <p>PDF교안</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="data_icon Ex_box">
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/hwp_data.png" alt="한글예상문답"><br>
+                            <p>한글예상문답</p>
+                        </a>
+                    </div>
+                    <div class="icon_part">
+                        <a href="#">
+                            <img src="image/dataroom/pdf_data.png" alt="PDF예상문답"><br>
+                            <p>PDF예상문답</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="data_icon supply_box">
+                    <div class="special_box">
+                        <div class="icon_part">
+                            <a href="#">
+                                <img src="image/dataroom/special_data.png" alt="특전자료"><br>
+                                <p>캘리그라피 연습교재</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="same">
+                    위 한글파일과 PDF파일은 같은 자료입니다.<br>
+                    원하시는 파일 형식으로 다운로드 받으시면 됩니다.
+                </p>
+            </div><!-- Data_Main End -->
+        </div><!-- Main_Contents End -->
+    </div><!-- Wrap End -->
 </body>
 
 </html>
