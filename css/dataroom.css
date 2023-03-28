@@ -15,7 +15,6 @@
     display: inline-block;
     position: relative;
     margin: 30px auto;
-    border: 1px solid #ddd;
 }
 
 .left_remote { 
@@ -198,3 +197,22 @@
     margin-bottom: 10px;
 }
 /* Main_contents End */
+
+@media all and (max-width: 999px) {
+    .main_contents {
+        width: 100%;
+    }
+    .data_viewer {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .view_contents {
+        width: 90%;
+    }
+    .contents_box {
+        width: 80%;
+        margin: 2.5% 10%;
+    }
+}
