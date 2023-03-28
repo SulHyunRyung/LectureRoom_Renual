@@ -160,7 +160,7 @@
 }
 
 .yes_sup .data_list li {
-    width: 33%;
+    width: calc( 100% / 3 );
 }
 
 .data_on {
@@ -221,7 +221,7 @@
     .contents_title {
         padding-left: 5px;
     }
-    
+
     .view_contents {
         width: 90%;
     }
